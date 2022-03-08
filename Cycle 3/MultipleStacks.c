@@ -50,14 +50,16 @@ void main()
 	scanf("%d",&ch);
 	switch(ch)
 	{
-	case 1: printf("Enter element to push: ");
+	case 1: printf("Enter element to push into stack 1: ");
 					scanf("%d",&item);
+					push(1,item);
 					break;
 	case 2: elt=pop(1);
 					printf("Element popped is: %d\n",elt);
 					break;
-	case 3: printf("Enter element to push: ");
+	case 3: printf("Enter element to push into stack 2: ");
 					scanf("%d",&item);
+					push(2,item);
 					break;
 	case 4: elt=pop(2);
 					printf("Element popped is: %d\n",elt);
